@@ -46,7 +46,7 @@ class UpSampleBlock(nn.Module):
 
 class Generator(nn.Module):
 
-    def __init__(self, im_chan=3, n_residual_blocks=5, n_upsample_blocks=2):
+    def __init__(self, im_chan=3, n_residual_blocks=16, n_upsample_blocks=2):
         super(Generator, self).__init__()
 
         self.im_chan = im_chan
